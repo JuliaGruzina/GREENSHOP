@@ -15,7 +15,7 @@ input{
   height: 40px;
   box-sizing: border-box;
   margin-bottom: 16px;
-  display: block
+  display: block;
 }
 input:last-of-type{
   font-weight: 400;
@@ -100,8 +100,8 @@ button{
   margin-bottom: 15px;
 }
 img{
-  margin-right: 9px
+  margin-right: 9px;
 }
 img:last-of-type{
-  margin-right: 4px
+  margin-right: 4px;
 }
