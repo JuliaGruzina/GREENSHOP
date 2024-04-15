@@ -41,7 +41,17 @@
   url('../fonts/cerapro-bold-webfont.svg#cera_probold') format('svg');
   font-weight: normal;
   font-style: normal;
-
+}
+@font-face {
+  font-family: 'cera_prolight';
+  src: url('../fonts/cerapro-light-webfont.eot');
+  src: url('../fonts/cerapro-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/cerapro-light-webfont.woff2') format('woff2'),
+  url('../fonts/cerapro-light-webfont.woff') format('woff'),
+  url('../fonts/cerapro-light-webfont.ttf') format('truetype'),
+  url('../fonts/cerapro-light-webfont.svg#cera_prolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 *{
   padding: 0;
@@ -207,6 +217,7 @@ header nav li:hover:after{
 header nav li a:hover{
   content: "";
   font-family: 'cera_probold';
+  font-weight: 700;
 }
 .login{
   font-family: 'cera_promedium';
@@ -237,11 +248,12 @@ header nav li a:hover{
 
 
 .banner .container1{
-  background: linear-gradient(135deg, #f5f5f5 0%, #f5f5f5 100%);
+  background: linear-gradient(135deg, #fbfbfb 0%, #fbfbfb 100%);
   min-height: 450px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 46px;
 }
 .banner article{
   max-width: 557px;
@@ -293,4 +305,176 @@ h1{
   line-height: 125%;
   text-transform: uppercase;
   padding: 10px 26px;
+}
+
+
+
+.categories .container1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.categories .left_sitebar{
+  background: linear-gradient(135deg, #fbfbfb 0%, #fbfbfb 100%);
+  max-width: 310px;
+  min-height: 800px;
+  width: 100%;
+  padding-top: 14px;
+  padding-left: 18px;
+}
+.categories .left_sitebar h5{
+  font-family: 'cera_probold';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+  margin-bottom: 10px;
+}
+.categories .left_sitebar ul{
+  list-style: none;
+  margin-left: 12px;
+}
+.categories .left_sitebar li a{
+  font-family: 'cera_proregular';
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 267%;
+  color: #3d3d3d;
+}
+.categories .left_sitebar li a:hover{
+  content: "";
+  font-family: 'cera_probold';
+  color: #46a358;
+  font-weight: 700;
+}
+
+
+.categories .right_content {
+  max-width: 810px;
+  width: 100%;
+  margin-bottom: 90px;
+}
+.categories .right_content  .flex2{
+  display: flex;
+  justify-content: space-between;
+}
+.categories .right_content  .flex3{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.categories .right_content article{
+  width: 258px;
+  margin-bottom: 70px;
+}
+.right_content .flex2 ul{
+  display: flex;
+  list-style: none;
+  margin-bottom: 31px;
+}
+.right_content .flex2 nav li{
+  margin-right: 38px;
+}
+.right_content .flex2 nav li a{
+  font-family: 'cera_proregular';
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 107%;
+  color: #3d3d3d;
+}
+.right_content .flex2 nav li:after{
+  height: 3px;
+  /*background-color: #46a358;*/
+  background-color: transparent;
+  width: 100%;
+  content: "";
+  display: block;
+  margin-top: 7px;
+  transition: 0.3s;
+}
+.right_content .flex2 nav li:hover:after{
+  background-color: #46a358;
+}
+.right_content .flex2 nav li a:hover{
+  content: "";
+  font-family: 'cera_probold';
+  font-weight: 700;
+  color: #46a358;
+}
+.right_content .flex2 p{
+  font-family: 'cera_proregular';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 107%;
+  color: #3d3d3d;
+}
+/*ПОСТАВИТЬ ЗНАЧЕК НА УРОВНЕ С ТЕКСТОМ*/
+.right_content .flex2 p:after{
+  content: "";
+  background-image: url("../img/arrow.svg");
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  margin: 2px 5px;
+}
+.product{
+  font-family: 'cera_proregular';
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #3d3d3d;
+}
+.right_content article img{
+  margin-bottom: 12px;
+}
+.right_content article p{
+  font-family: 'cera_probold';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #46a358;
+  margin-top: 6px;
+}
+.pages{
+  display: flex;
+  justify-content: flex-end;
+}
+.pages ul{
+  list-style: none;
+}
+.pages li {
+  display: inline-block;
+}
+.active_pages{
+  font-family: 'cera_prolight';
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #E5E5E5;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+  height: 35px;
+  line-height: 35px;
+  padding: 6px 12px;
+  margin-right: 10px;
+}
+.active_pages:hover{
+  content: "";
+  font-family: 'cera_probold';
+  background-color: #46a358;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #fff;
+}
+.pages img{
+  margin: 0 auto;
 }
