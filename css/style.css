@@ -352,7 +352,7 @@ h1{
 
 
 .categories .right_content {
-  max-width: 810px;
+  max-width: 840px;
   width: 100%;
   margin-bottom: 90px;
 }
@@ -419,8 +419,6 @@ h1{
   display: inline-block;
   width: 16px;
   height: 16px;
-  position: absolute;
-  margin: 2px 5px;
 }
 .product{
   font-family: 'cera_proregular';
