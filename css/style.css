@@ -412,13 +412,13 @@ h1{
   line-height: 107%;
   color: #3d3d3d;
 }
-/*ПОСТАВИТЬ ЗНАЧЕК НА УРОВНЕ С ТЕКСТОМ*/
 .right_content .flex2 p:after{
   content: "";
   background-image: url("../img/arrow.svg");
-  display: inline-block;
-  width: 16px;
-  height: 16px;
+  display:inline-block;
+  width: 12px;
+  height: 8px;
+  margin-left: 5px;
 }
 .product{
   font-family: 'cera_proregular';
