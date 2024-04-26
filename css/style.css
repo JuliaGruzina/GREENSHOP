@@ -53,12 +53,23 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'cera_prothin';
+  src: url('../fonts/cerapro-thin-webfont.eot');
+  src: url('../fonts/cerapro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/cerapro-thin-webfont.woff2') format('woff2'),
+  url('../fonts/cerapro-thin-webfont.woff') format('woff'),
+  url('../fonts/cerapro-thin-webfont.svg#cera_prothin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 input{
+  font-family: 'cera_proregular';
   font-weight: 400;
   font-size: 14px;
   line-height: 114%;
@@ -87,6 +98,7 @@ input:last-of-type{
   display: block;
 }
 button{
+  font-family: 'cera_probold';
   border-radius: 5px;
   width: 300px;
   background: #46a358;
@@ -98,6 +110,10 @@ button{
   color: #fff;
   padding: 15px 0;
   margin-bottom: 36px;
+  transition: 0.2s;
+}
+button:hover {
+  background-color: #1a712a;
 }
 .container{
   max-width: 500px;
@@ -110,6 +126,7 @@ button{
   margin-bottom: 40px;
 }
 .text{
+  font-family: 'cera_proregular';
   font-weight: 400;
   font-size: 13px;
   line-height: 123%;
@@ -121,21 +138,30 @@ button{
   text-align: center;
 }
 .container #box_model span:first-of-type{
+  font-family: 'cera_promedium';
   font-weight: 500;
   font-size: 20px;
   line-height: 80%;
   color: #3d3d3d;
-  border-right: solid 1px black;
-  padding-right: 11px;
-  margin-right: 11px;
+  margin-right: 12px;
+}
+.container #box_model span:nth-child(2){
+  font-family: 'cera_prothin';
+  font-weight: 250;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+  margin-right: 12px;
 }
 .container #box_model span:last-of-type{
+  font-family: 'cera_promedium';
   font-weight: 500;
   font-size: 20px;
   line-height: 80%;
   color: #46a358;
 }
 .container a{
+  font-family: 'cera_promedium';
   text-align: center;
   font-weight: 500;
   font-size: 13px;
@@ -236,6 +262,14 @@ header nav li a:hover{
   text-decoration: none;
   line-height: 100%;
   padding: 8px 18px;
+  transition: 0.2s;
+}
+.login:hover{
+  background-color: #1a712a;
+  transform: scale(2);
+}
+.login:hover:before{
+  transform: rotate(360deg);
 }
 .login:before{
   content: "";
@@ -244,6 +278,7 @@ header nav li a:hover{
   width: 20px;
   height: 20px;
   margin-right: 4px;
+  transition: 0.6s;
 }
 header nav ul li .dropdown, header nav ul li .moveright{
   position: relative;
@@ -367,6 +402,10 @@ h1{
   line-height: 125%;
   text-transform: uppercase;
   padding: 10px 26px;
+  transition: 0.2s;
+}
+.banner .container1 a:hover{
+  background-color: #1a712a;
 }
 
 
@@ -459,7 +498,7 @@ h1{
   opacity: 0;
   transition: 0.4s;
 }
-.categories .right_content article ul:hover{
+.categories .right_content article:hover  ul{
   opacity: 1;
 }
 .categories .right_content article ul li{
@@ -648,6 +687,10 @@ h1{
   line-height: 143%;
   padding: 8px 18px;
   float: right;
+  transition: 0.2s;
+}
+.blog .top_content a:hover{
+  background-color: #1a712a;
 }
 .blog .top_content a:after{
   content: "";
@@ -738,4 +781,20 @@ h1{
   padding-left: 13px;
   padding-right: 13px;
   padding-bottom: 13px;
+}
+
+
+footer .bg_gradient {
+  width: 1200px;
+  height: 88px;
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(left, #EDF6EF, #52C368);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient( left, #EDF6EF, #52C368);
+  /* IE 10 */
+  background: -ms-linear-gradient(left, #EDF6EF, #52C368);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, #EDF6EF, #52C368);
 }
