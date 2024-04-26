@@ -179,8 +179,8 @@ header nav, header nav li,header .logo{
 }
 header ul{
   list-style: none;
-  margin-left: 229px;
   margin-top: 5px;
+  display: flex;
 }
 header nav li a{
   text-decoration: none;
@@ -191,11 +191,12 @@ header nav li a{
 }
 header .logo{
   float: left;
+  margin-right: 229px;
 }
 header .login{
   float: right;
 }
-header nav .menu{
+header nav ul li.menu{
   margin-right: 50px;
 }
 header nav li:last-of-type{
@@ -254,7 +255,7 @@ header nav ul.submenu{
   height: 0;
   opacity: 0;
   top: 85px;
-  left: 450px;
+  margin-left: -50px;
   min-width: 188px;
 }
 header nav ul .submenu li a svg{
