@@ -1024,6 +1024,10 @@ footer .content-block .media li{
   padding-top: 7px;
   display: inline-block;
   margin:12px 10px 33px 0;
+  transition: 0.2s;
+}
+footer .content-block .media li:hover {
+  transform: scale(2);
 }
 footer .content-block .media h5:last-of-type:after{
   content: "";
