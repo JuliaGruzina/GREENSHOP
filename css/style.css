@@ -97,6 +97,15 @@ input:last-of-type{
   margin-bottom: 40px;
   display: block;
 }
+.container input:nth-child(3){
+  position: relative;
+}
+.container .hide{
+  position: absolute;
+  margin-left: 270px;
+  margin-top: -45px;
+  cursor: pointer;
+}
 button{
   font-family: 'cera_probold';
   border-radius: 5px;
