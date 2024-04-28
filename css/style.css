@@ -344,6 +344,7 @@ header .moveright .sub-submenu{
 }
 
 
+
 .banner .container1{
   background: linear-gradient(135deg, #fbfbfb 0%, #fbfbfb 100%);
   min-height: 450px;
@@ -450,6 +451,7 @@ h1{
   color: #46a358;
   font-weight: 700;
 }
+
 
 
 .categories .right_content {
@@ -632,6 +634,29 @@ h1{
 .pages ul li:hover a svg path{
   stroke: white!important;
 }
+.pages ul li a svg:last-of-type{
+  display: inline-block;
+  position: relative;
+  animation:  slidering  1s infinite;
+}
+@keyframes slidering {
+  0%{
+    left: -6px;
+  }
+  25%{
+    left: -3px;
+  }
+  50%{
+    left: 0px;
+  }
+  75%{
+    left: 3px;
+  }
+  100%{
+    left: 6px;
+  }
+}
+
 
 
 .blog .flex4{
@@ -784,7 +809,93 @@ h1{
 }
 
 
+
+footer .flex6{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 25px;
+  background: linear-gradient(135deg, #fbfbfb 0%, #fbfbfb 100%);
+  }
+footer .newsletters{
+  min-width: 204px;
+  min-height: 202px;
+
+}
+footer .newsletters:first-of-type{
+  border-right: 1px solid rgba(70, 163, 88, 0.1);
+  padding-right: 30px;
+}
+footer .newsletters:nth-child(2){
+  border-right: 1px solid rgba(70, 163, 88, 0.1);
+  padding-right: 30px;
+}
+.newsletters h5{
+  font-family: 'cera_probold';
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 94%;
+  color: #3d3d3d;
+  margin-top: 12px;
+  margin-bottom: 9px;
+}
+.newsletters p{
+  font-family: 'cera_proregular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #727272;
+}
+footer .email h5{
+  font-family: 'cera_probold';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+  margin-top: 14px;
+  margin-bottom: 25px;
+}
+footer .email p{
+  font-family: 'cera_proregular';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 169%;
+  color: #727272;
+}
+footer .email span{
+  display: inline-block;
+  display: flex;
+  width: 354px;
+  height: 40px;
+  margin-bottom: 18px;
+}
+footer .email span button {
+  font-family: 'cera_probold';
+  border-radius: 0 6px 6px 0;
+  background: #46a358;
+  width: 85px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #fff;
+  padding: 12px 26px;
+  transition: 0.2s;
+  border: none;
+}
+footer .email span button:hover {
+  background-color: #1a712a;
+}
+footer .email span input{
+  border-radius:  6px 0 0 6px ;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+}
+
 footer .bg_gradient {
+  display: flex;
+ /* justify-content: space-between;*/
+  padding: 25px 22px 19px 23px;
+  /*text-align: center;*/
   width: 1200px;
   height: 88px;
   /* Safari 4-5, Chrome 1-9 */
@@ -797,4 +908,137 @@ footer .bg_gradient {
   background: -ms-linear-gradient(left, #EDF6EF, #52C368);
   /* Opera 11.10+ */
   background: -o-linear-gradient(left, #EDF6EF, #52C368);
+}
+/*
+footer .bg_gradient a{
+  font-family: 'cera_proregular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #3d3d3d;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+footer .bg_gradient a:nth-child(2):before{
+  content: "";
+  background-image: url("../img/location.svg");
+  display: inline-block;
+  width: 14px;
+  height: 18px;
+  margin-right: 13px;
+}
+footer .bg_gradient a:nth-child(3):before{
+  content: "";
+  background-image: url("../img/message.svg");
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  margin-right: 13px;
+}
+footer .bg_gradient a:last-of-type:before{
+  content: "";
+  background-image: url("../img/phone.svg");
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 13px;
+}
+*/
+footer .bg_gradient ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+footer .bg_gradient li{
+  margin-left: 155px;
+}
+footer .bg_gradient ul li a{
+  font-family: 'cera_proregular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #3d3d3d;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+footer .bg_gradient .address:before{
+  content: "";
+  background-image: url("../img/location.svg");
+  display: inline-block;
+  width: 14px;
+  height: 18px;
+  margin-right: 13px;
+}
+footer .bg_gradient .contact:before{
+  content: "";
+  background-image: url("../img/message.svg");
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  margin-right: 13px;
+}
+footer .bg_gradient .tel:before{
+  content: "";
+  background-image: url("../img/phone.svg");
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 13px;
+}
+
+footer .content-block{
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 155px 27px 25px;
+  background: linear-gradient(135deg, #fbfbfb 0%, #fbfbfb 100%);
+  border-bottom: solid 1px #edf6ee; ;
+  margin-bottom: 6px;
+}
+footer .content-block h5{
+  font-family: 'cera_probold';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+  margin-bottom: 8px;
+}
+footer .content-block ul{
+  list-style: none;
+}
+footer .content-block ul li a{
+  font-family: 'cera_proregular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 214%;
+  color: #3d3d3d;
+  text-decoration: none;
+}
+footer .content-block .media li{
+  border: 1px solid rgba(70, 163, 88, 0.2);
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding-top: 7px;
+  display: inline-block;
+  margin:12px 10px 33px 0;
+}
+footer .content-block .media h5:last-of-type:after{
+  content: "";
+  background-image: url("../img/bank.svg");
+  display: block;
+  width: 224px;
+  height: 26px;
+  margin-top: 13px;
+}
+footer .container1 span{
+  font-family: 'cera_proregular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 214%;
+  color: #3d3d3d;
+  display: flex;
+  justify-content: center;
 }
