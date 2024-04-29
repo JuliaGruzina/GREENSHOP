@@ -104,8 +104,8 @@ input{
   line-height: 100%;
   color: #fff;
   padding: 15px 0;
-  margin-top: 40px;
   margin-bottom: 36px;
+  margin-top: 40px;
   transition: 0.2s;
 }
 button:hover {
@@ -116,6 +116,18 @@ button:hover {
   margin:auto;
   padding: 52px 100px 50px;
   box-sizing: border-box;
+  border-bottom: 10px solid #46a358;
+  position: relative;
+}
+.container .close{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.close:hover svg path{
+  stroke: #46a358;
 }
 #box_model{
   text-align: center;
@@ -133,6 +145,16 @@ button:hover {
   margin-bottom: 27px;
   text-align: center;
 }
+.mb:before,.mb:after {
+  content:'';
+  display:inline-block;
+  vertical-align:middle;
+  box-sizing:border-box;width:97px;height:1px;
+  border:solid #eaeaea;
+  border-width:1px 0;
+}
+.mb:before {margin-left:-100%}
+.mb:after {margin-right:-100%}
 .container #box_model span:first-of-type{
   font-family: 'cera_promedium';
   font-weight: 500;
