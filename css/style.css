@@ -92,7 +92,7 @@ input{
   top: 12px;
   right: 5px;
 }
-button{
+.register{
   font-family: 'cera_probold';
   border-radius: 5px;
   width: 300px;
