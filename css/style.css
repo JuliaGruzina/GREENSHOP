@@ -83,28 +83,14 @@ input{
   margin-bottom: 16px;
   display: block;
 }
-input:last-of-type{
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 114%;
-  color: #a5a5a5;
-  padding: 12px 14px;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-  width: 100%;
-  height: 40px;
-  box-sizing: border-box;
-  margin-bottom: 40px;
-  display: block;
-}
-.container input:nth-child(3){
+.input-box{
   position: relative;
 }
-.container .hide{
-  position: absolute;
-  margin-left: 270px;
-  margin-top: -45px;
+.input-box img{
   cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 5px;
 }
 button{
   font-family: 'cera_probold';
@@ -118,6 +104,7 @@ button{
   line-height: 100%;
   color: #fff;
   padding: 15px 0;
+  margin-top: 40px;
   margin-bottom: 36px;
   transition: 0.2s;
 }
