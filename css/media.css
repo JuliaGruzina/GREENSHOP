@@ -1,5 +1,10 @@
-
 @media only screen and (max-width: 480px) {
+  img{
+    margin-right: 0;
+  }
+  img:last-of-type{
+    margin-right: 0;
+  }
   .register{
     margin-top: 20px;
     width: 100%;
@@ -61,7 +66,6 @@
     width: 100%;
     height: auto;
   }
-
   .categories .container1 {
     display: flex;
     justify-content: space-between;
