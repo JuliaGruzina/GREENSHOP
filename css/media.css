@@ -1,5 +1,4 @@
 
-
 @media only screen and (max-width: 480px) {
   .register{
     margin-top: 20px;
@@ -92,6 +91,7 @@
   }
 
   .left_content {
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
