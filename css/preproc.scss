@@ -4,6 +4,7 @@ $color_3: #3d3d3d;
 $color_4:#fff;
 $color_5:#a5a5a5;
 $color_6:#fbfbfb;
+$color_7:#eaeaea;
 $font-family_1: 'cera_proregular';
 $font-family_2: 'cera_promedium';
 $font-family_3: 'cera_probold';
@@ -149,7 +150,7 @@ input {
   line-height: 114%;
   color: $color_5;
   padding: 12px 14px;
-  border: 1px solid #eaeaea;
+  border: 1px solid $color_7;
   border-radius: 5px;
   width: 100%;
   height: 40px;
@@ -236,7 +237,7 @@ button:hover {
     box-sizing: border-box;
     width: 97px;
     height: 1px;
-    border: solid #eaeaea;
+    border: solid $color_7;
     border-width: 1px 0;
   }
 
@@ -287,7 +288,7 @@ button:hover {
     color: #727272;
     text-decoration: none;
     display: block;
-    border: 1px solid #eaeaea;
+    border: 1px solid $color_7;
     border-radius: 5px;
     width: 300px;
     height: 40px;
