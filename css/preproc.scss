@@ -1302,3 +1302,50 @@ footer {
     justify-content: center;
   }
   }
+  .faq{
+  .container1{
+    max-width: 1200px;
+    margin: auto;
+  }
+  .ui-accordion .ui-accordion-header{
+    border-radius: 22px;
+    padding: 20px 16px;
+    background-color: transparent;
+    border: solid 2px $color_1;
+    &.ui-state-active{
+      background-color: #e6ffe6;
+      border-bottom: none;
+      border-radius: 22px 22px 0px 0 ;
+    }
+    &.ui-accordion-header-active .ui-icon:after {
+      transform: rotate(180deg);
+    }
+    .ui-icon {
+      position: absolute;
+      right: 30px;
+      top: 27px;
+      background-image: none;
+      background-position: 0;
+      text-indent: 0;
+      &:after {
+        content: "";
+        display: block !important;
+        background-image: url("../img/arrow.svg");
+        width: 16px;
+        height: 11px;
+        background-size: contain;
+      }
+    }
+  }
+  .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    border: solid 2px $color_1;
+    color: black;
+  }
+  .ui-accordion .ui-accordion-content{
+    border: solid 2px $color_1;
+    background-color: #e6ffe6;
+    border-radius: 0px 0 22px 22px;
+    overflow: visible;
+    border-top: none;
+  }
+}
