@@ -5,6 +5,8 @@ $color_4:#fff;
 $color_5:#a5a5a5;
 $color_6:#fbfbfb;
 $color_7:#eaeaea;
+$color_8:#edf6ee;
+$color_9:#727272;
 $font-family_1: 'cera_proregular';
 $font-family_2: 'cera_promedium';
 $font-family_3: 'cera_probold';
@@ -285,7 +287,7 @@ button:hover {
     font-weight: 500;
     font-size: 13px;
     line-height: 123%;
-    color: #727272;
+    color: $color_9;
     text-decoration: none;
     display: block;
     border: 1px solid $color_7;
@@ -314,7 +316,7 @@ img {
   margin: auto;
 
   &.menu1 {
-    border-bottom: solid 1px #edf6ee;
+    border-bottom: solid 1px $color_8;
     margin-bottom: 12px;
   }
 }
@@ -441,7 +443,7 @@ header {
 
       &.submenu {
         display: block;
-        background-color: #edf6ee;
+        background-color: $color_8;
         position: absolute;
         height: 0;
         opacity: 0;
@@ -502,7 +504,7 @@ header {
 
     .sub-submenu {
       display: block;
-      background-color: #edf6ee;
+      background-color: $color_8;
       position: absolute;
       opacity: 0;
       height: 0;
@@ -562,7 +564,7 @@ h1 {
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
-    color: #727272;
+    color: $color_9;
     margin-bottom: 44px;
     font-family: $font-family_1;
   }
@@ -934,7 +936,7 @@ h1 {
       font-size: 14px;
       line-height: 171%;
       text-align: right;
-      color: #727272;
+      color: $color_9;
       margin-bottom: 25px;
     }
 
@@ -987,7 +989,7 @@ h1 {
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
-    color: #727272;
+    color: $color_9;
     margin-bottom: 35px;
     display: inline-block;
     display: flex;
@@ -1031,7 +1033,7 @@ h1 {
   font-weight: 400;
   font-size: 14px;
   line-height: 157%;
-  color: #727272;
+  color: $color_9;
   margin-bottom: 9px;
 }
 
@@ -1101,7 +1103,7 @@ footer {
     font-weight: 400;
     font-size: 14px;
     line-height: 157%;
-    color: #727272;
+    color: $color_9;
   }
 }
 
@@ -1122,7 +1124,7 @@ footer {
       font-weight: 400;
       font-size: 13px;
       line-height: 169%;
-      color: #727272;
+      color: $color_9;
     }
 
     span {
@@ -1238,7 +1240,7 @@ footer {
     justify-content: space-between;
     padding: 33px 155px 27px 25px;
     background: linear-gradient(135deg, $color_6 0%, $color_6 100%);
-    border-bottom: solid 1px #edf6ee;
+    border-bottom: solid 1px $color_8;
     margin-bottom: 6px;
 
     h5 {
