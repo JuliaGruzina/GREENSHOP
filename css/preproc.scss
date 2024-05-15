@@ -1120,7 +1120,7 @@ footer {
     }
 
     p {
-      font-family:$font-family_1;
+      font-family: $font-family_1;
       font-weight: 400;
       font-size: 13px;
       line-height: 169%;
@@ -1197,11 +1197,11 @@ footer {
     }
 
     ul li a {
-      font-family:$font-family_1;
+      font-family: $font-family_1;
       font-weight: 400;
       font-size: 14px;
       line-height: 157%;
-      color:$color_3;
+      color: $color_3;
       text-decoration: none;
       display: flex;
       align-items: center;
@@ -1233,7 +1233,7 @@ footer {
       height: 20px;
       margin-right: 13px;
     }
-
+  }
 
   .content-block {
     display: flex;
@@ -1260,7 +1260,7 @@ footer {
         font-weight: 400;
         font-size: 14px;
         line-height: 214%;
-        color:$color_3;
+        color: $color_3;
         text-decoration: none;
       }
     }
@@ -1292,6 +1292,7 @@ footer {
       }
     }
   }
+
   .container1 span {
     font-family: $font-family_1;
     font-weight: 400;
@@ -1301,8 +1302,9 @@ footer {
     display: flex;
     justify-content: center;
   }
-  }
-  .faq{
+}
+
+.faq{
   .container1{
     max-width: 1200px;
     margin: auto;
