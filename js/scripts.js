@@ -15,3 +15,7 @@ $('.owl-carousel').owlCarousel({
     }
   }
 });
+
+$( function() {
+  $( "#accordion" ).accordion();
+} );
